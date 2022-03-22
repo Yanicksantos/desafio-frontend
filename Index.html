@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+
+        <div class="container">
+
+            <div class="top">
+                <h1>Previsão do tempo</h1>
+                
+                <div class="top-display">
+
+                    <div class="display1">
+                        <p><b> Niterói, RJ - Brasil</b></p>
+                        <button onclick="displayoff()" type="button"><i class="material-icons">clear</i></button>
+                    </div>
+
+                    <div class="display2"><strong> 20°C Nublado</strong></div>
+
+                    <div class="display3">
+                        <div class="display3-p">
+                            <p ><i class="material-icons i1">&#xe5db;</i><b>16°</b></p>
+                            <p><i class="material-icons i2">arrow_upward</i><b>25°</b></p>
+                        </div>
+                        <div class="control-extra">Sensação <b>19°C</b> </div>
+                    </div>
+
+                    <div class="display4">
+                        <p>Vento <b>18Km/h</b> </p>
+                        <p>Humidade <b>89%</b> </p>
+                    </div>
+
+                    <div class="border"></div>
+
+                    <div class="display5">
+                        <p><b>Terça</b></p>
+                        <p><b>Quarta</b></p>
+                        <p><b>Quinta</b></p>
+                        <p><b>Sexta</b></p>
+                        <p><b>Sábado</b></p>
+                    </div>
+
+                    <div class="display6">
+                        <p><b>18° 26°</b> </p>
+                        <p><b>18° 28°</b> </p>
+                        <p><b>19° 30°</b> </p>
+                        <p><b>23° 35°</b> </p>
+                        <p><b>23° 37°</b> </p>
+                    </div>
+                    
+                </div>
+
+                <form>
+                    <input type="search" placeholder="Insira aqui o nome da cidade"/>
+                    <button onclick="displayon()" type="button"><i class="material-icons">search</i></button>
+                </form>
+                <hr>
+            <div>
+        </div>
+
+        
+        <section class="bottom-end">
+            <h2 class="title-end">Capitais</h2>
+            <div class="end">
+                <div class="end_1">
+                    <div class="maxmin">Min Máx</div>
+                    <div> <strong>18° 17° Rio de Janeiro</strong> </div>
+                    <div><strong>21° 32° Belo Horizonte</strong> </div>
+                    <div><strong>24° 37° Brasília</strong> </div>
+                    <div><strong>24° 37° Belém</strong> </div>
+                </div>
+
+                <div class="end_2">
+                    <div class="maxmin">Min Máx</div>
+                    <div><strong>23° 37° Salvador</strong> </div>
+                    <div><strong>21° 32° Forteleza</strong></div>
+                    <div><strong>24° 37° Manaus</strong></div>
+                    <div><strong>28° 40° Jõao Pessoa</strong></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
