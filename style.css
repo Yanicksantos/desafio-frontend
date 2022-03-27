@@ -4,51 +4,49 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.main{
-    height: 750px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgb(255, 134,0), rgb(255,187,0));
+body{background-color: rgb(255,187,0);}
+.container{
     display: flex;
+    height: 700px;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgb(255, 134,0), rgb(255,187,0));
     justify-content: center;
 }
 
-.container{
-    width: 400px;
-    display: flex;
+.bodyrange{
+    min-width: 480px;
+    height: 300px;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+#title{
+    margin-bottom: 10%;
+    font-size: 49px;
+    color: white;
 }
 
 .top{
-    width: 100%;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-.top h1{
-    margin-bottom: 30px;
-    font-size: 40px;
-    color: white;
+    width: 480px;
+    padding: 0 40px 0 40px;
 }
 
 .top-display{
     display: none;
-    width: 300px;
     background-color: white;
-    border: 1px solid white;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     padding: 10px;
 }
 
-.display1{display: flex;justify-content: space-between; font-size: 10px; padding-left: 20px; }
+.display1{
+    display: flex;
+    justify-content: space-between; 
+    font-size: 10px; 
+    padding-left: 20px; 
+}
 
 .display1 i{
     font-size: 20px; 
     color:rgb(255, 134,0);
-
 }
 .display1 button{
     background-color: white;
@@ -60,14 +58,14 @@
 }
 
 .display2{
-    text-align: start; 
-    padding-left: 20px;
+    display: flex;
     margin: 25px 0 25px 0; 
     font-size: 30px;
+    padding-left: 20px ;
 }
 .display3{
     display: flex; 
-    width: 200px;
+    max-width: 200px;
     font-size: 10px;
     margin-bottom: 10px;
 }
@@ -82,54 +80,72 @@
 }
 .control-extra{margin-left:57px;}
 
-.display4{display: flex;justify-content: space-between; font-size: 10px;  width: 200px; padding-left: 20px;margin-bottom: 10px;}
-hr{color:rgb(255, 134,0) ;}
+.display4{
+    display: flex;
+    justify-content: space-between; 
+    font-size: 10px;  width: 200px; 
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
 .border{border:0.5px solid rgb(255, 134,0)}
-.display5{display: flex;justify-content: space-between;padding: 5px 20px 5px 20px;; font-size: 10px;}
-.display6{display: flex; justify-content: space-between; padding: 5px 20px 5px 20px; font-size: 10px; color: rgb(255, 134,0);}
+
+.display5{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;; 
+    font-size: 10px;
+}
+
+.display6{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 5px 20px 5px 20px; 
+    font-size: 10px; color: rgb(255, 134,0);
+}
 
 .top form{
     display: flex;
-    margin-left: 50px;
-    width: 300px;
+    width: 100%;
     border: 1px solid white;
     background-color: white;
     margin-bottom: 20px;
     justify-content: space-between;
 }
+
 form input{
     font-size: 16px;
     padding: 10px;
-    width: 250px;
+    width: 90%;
     height: 42px;
     border: none;
     outline: none;
 }
+
 form button {
     color:dimgray;
     background-color: white;
     border: none;
 }
+
 form button i{padding: 10px;}
+
 form button i:hover{
     opacity: 0.7; 
     cursor: pointer;
 }
 
-
-
-
 .bottom-end{
-    margin-top: 20px;
-    width: 250px;
-    height: auto;
-    margin-left: 100px;
+    margin-top: 5%;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
     
 }
 
 .bottom-end h2{
     text-align: start;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     color: white;
     font-size: 20px;
 }
@@ -157,8 +173,28 @@ form button i:hover{
 
 .end div{margin-bottom: 10px;}
 
+.divend{margin-bottom: 0;}
+
 .maxmin{
     color:dimgray;
     font-size: 10px;
 }
 .end_1 strong, .end_2 strong{font-size: 10px;}
+
+
+@media (max-width: 480px){
+   
+    .container{
+        width: 480px;
+        height: 800px;
+    }
+
+    .top{padding: 0;}
+    .controlfrm{padding: 0 20px 0 20px;}
+    .end{flex-direction: column;}
+    .end_2{
+        margin-top: -10px;
+        margin-left: 0;
+    }
+    .end_2 .maxmin{display: none;}
+}

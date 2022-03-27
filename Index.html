@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Previsão do Tempo</title>
 </head>
 <body>
-    <section class="main">
-
-        <div class="container">
-
+    <section class="container ">
+        <div class="bodyrange">
+            <h1 id="title">Previsão do tempo</h1>
             <div class="top">
-                <h1>Previsão do tempo</h1>
-                
                 <div class="top-display">
 
                     <div class="display1">
@@ -23,7 +20,7 @@
                         <button onclick="displayoff()" type="button"><i class="material-icons">clear</i></button>
                     </div>
 
-                    <div class="display2"><strong> 20°C Nublado</strong></div>
+                    <div class="display2"><strong>20°C Nublado</strong></div>
 
                     <div class="display3">
                         <div class="display3-p">
@@ -55,38 +52,38 @@
                         <p><b>23° 35°</b> </p>
                         <p><b>23° 37°</b> </p>
                     </div>
-                    
                 </div>
 
-                <form>
-                    <input type="search" placeholder="Insira aqui o nome da cidade"/>
-                    <button onclick="displayon()" type="button"><i class="material-icons">search</i></button>
-                </form>
-                <hr>
-            <div>
-        </div>
-
-        
-        <section class="bottom-end">
-            <h2 class="title-end">Capitais</h2>
-            <div class="end">
-                <div class="end_1">
-                    <div class="maxmin">Min Máx</div>
-                    <div> <strong>18° 17° Rio de Janeiro</strong> </div>
-                    <div><strong>21° 32° Belo Horizonte</strong> </div>
-                    <div><strong>24° 37° Brasília</strong> </div>
-                    <div><strong>24° 37° Belém</strong> </div>
-                </div>
-
-                <div class="end_2">
-                    <div class="maxmin">Min Máx</div>
-                    <div><strong>23° 37° Salvador</strong> </div>
-                    <div><strong>21° 32° Forteleza</strong></div>
-                    <div><strong>24° 37° Manaus</strong></div>
-                    <div><strong>28° 40° Jõao Pessoa</strong></div>
+                <div class="controlfrm">
+                    <form name="frmAlert">
+                        <input type="txt" placeholder="Insira aqui o nome da cidade" name="txtAlert"/>
+                        <button onclick="displayon()" type="button"><i class="material-icons">search</i></button>
+                    </form>
                 </div>
             </div>
-        </section>
+            <hr>
+            <div class="bottom-end">
+             
+                <h2 class="title-end">Capitais</h2>
+                <div class="end">
+                    <div class="end_1">
+                        <div class="maxmin">Min Máx</div>
+                        <div> <strong>18° 17° Rio de Janeiro</strong> </div>
+                        <div><strong>21° 32° Belo Horizonte</strong> </div>
+                        <div><strong>24° 37° Brasília</strong> </div>
+                        <div><strong>24° 37° Belém</strong> </div>
+                    </div>
+    
+                    <div class="end_2">
+                        <div class="maxmin">Min Máx</div>
+                        <div><strong>23° 37° Salvador</strong> </div>
+                        <div><strong>21° 32° Forteleza</strong></div>
+                        <div><strong>24° 37° Manaus</strong></div>
+                        <div><strong>28° 40° Jõao Pessoa</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
