@@ -5,7 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{background-color: rgb(255,187,0);}
-.container{
+
+.bodyrange{
     display: flex;
     height: 700px;
     width: 100vw;
@@ -13,7 +14,7 @@ body{background-color: rgb(255,187,0);}
     justify-content: center;
 }
 
-.bodyrange{
+.container{
     max-width: 480px;
     height: 300px;
     padding: 50px 0 50px 0;
@@ -27,62 +28,62 @@ body{background-color: rgb(255,187,0);}
     color: white;
 }
 
-.top{
+.mainResult{
     width: 480px;
     padding: 0 40px 0 40px;
 }
 
-.top-display{
+.searchResult{
     display: none;
     background-color: white;
     margin-bottom: 10px;
     padding: 20px;
 }
 
-.display1{
+.firstResult{
     display: flex;
     justify-content: space-between; 
     font-size: 10px; 
     padding-left: 20px; 
 }
 
-.display1 i{
+.firstResult i{
     font-size: 20px; 
     color:rgb(255, 134,0);
 }
-.display1 button{
+.firstResult button{
     background-color: white;
     border: none;
 }
-.display1 button:hover{
+.firstResult button:hover{
     opacity: 0.7; 
     cursor: pointer;
 }
 
-.display2{
+.secondResult{
     display: flex;
     margin: 25px 0 25px 0; 
     font-size: 30px;
     padding-left: 20px ;
 }
-.display3{
+.thirdResult{
     display: flex; 
     max-width: 200px;
     font-size: 10px;
     margin-bottom: 10px;
 }
-.display3-p i{
+.thirdResult-p i{
     font-size: 10px; 
     color: rgb(255, 134,0)
 }
-.display3-p .i1{padding-left: 20px;}
-.display3-p .i2{margin-left: 5px;}
-.display3-p {
+.thirdResult-p .i1{padding-left: 20px;}
+.thirdResult-p .i2{margin-left: 5px;}
+.thirdResult-p {
     display: flex;
 }
-.control-extra{margin-left:57px;}
+.thirdResult-extra{margin-left:57px;}
 
-.display4{
+.fourthResult{
     display: flex;
     justify-content: space-between; 
     font-size: 10px;  width: 200px; 
@@ -92,21 +93,21 @@ body{background-color: rgb(255,187,0);}
 
 .border{border:0.5px solid rgb(255, 134,0)}
 
-.display5{
+.fifthResult{
     display: flex;
     justify-content: space-between;
     padding: 5px 20px 5px 20px;; 
     font-size: 10px;
 }
 
-.display6{
+.sixthResult{
     display: flex; 
     justify-content: space-between; 
     padding: 5px 20px 5px 20px; 
     font-size: 10px; color: rgb(255, 134,0);
 }
 
-.top form{
+.mainResult form{
     display: flex;
     width: 100%;
     border: 1px solid white;
@@ -142,7 +143,6 @@ form button i:hover{
     width: 300px;
     height: 100%;
     margin-left: 80px;
-    
 }
 
 .bottom-end h2{
@@ -186,12 +186,12 @@ form button i:hover{
 
 @media (max-width: 480px){
    
-    .container{
+    .bodyrange{
         width: 480px;
         height: 800px;
     }
 
-    .top{padding: 0;}
+    .mainResult{padding: 0;}
     #title{
         width: 300px;
         padding-left: 25px;
