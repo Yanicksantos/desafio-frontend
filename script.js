@@ -23,13 +23,14 @@ async function displayon(){
             alert("Endereço Inválido")
         }else {
             const data = await response.json();
+            console.log(data)
             PreencherNaTela(data);
         }
     }
 }
 
 function PreencherNaTela(dataApi){
-    local.innerHTML= `${dataApi.name}, Brasil`
+    local.innerHTML= `${dataApi.name}, ${dataApi.sys.country}`
     descricao.innerHTML = `${(dataApi.main.temp).toFixed(0)}°C ${dataApi.weather[0].description}`
     minprincipal.innerHTML = `${(dataApi.main.temp_min).toFixed(0)}°`
     maxprincipal.innerHTML = `${(dataApi.main.temp_max).toFixed(0)}°`
