@@ -19,23 +19,23 @@
                 <div class="searchResult">
 
                     <div class="firstResult">
-                        <p><b> Niterói, RJ - Brasil</b></p>
+                        <p><b id="local"> Niterói, RJ - Brasil</b></p>
                         <button onclick="displayoff()" type="button"><i class="material-icons">clear</i></button>
                     </div>
 
-                    <div class="secondResult"><strong>20°C Nublado</strong></div>
+                    <div class="secondResult"><strong id="descricao" style="text-transform:uppercase;">20°C Nublado</strong></div>
 
                     <div class="thirdResult">
                         <div class="thirdResult-p">
-                            <p><i class="material-icons i1">&#xe5db;</i><b>16°</b></p>
-                            <p><i class="material-icons i2">arrow_upward</i><b>25°</b></p>
+                            <p><i class="material-icons i1">&#xe5db;</i><b id="minprincipal">16°</b></p>
+                            <p><i class="material-icons i2">arrow_upward</i><b id="maxprincipal">25°</b></p>
                         </div>
-                        <div class="thirdResult-extra">Sensação <b>19°C</b> </div>
+                        <div class="thirdResult-extra">Sensação <b id="sensacao">19°C</b> </div>
                     </div>
 
                     <div class="fourthResult">
-                        <p>Vento <b>18Km/h</b> </p>
-                        <p>Humidade <b>89%</b> </p>
+                        <p>Vento <b id="vento">18Km/h</b> </p>
+                        <p>Humidade <b id="humidade">89%</b> </p>
                     </div>
 
                     <div class="border"></div>
@@ -59,7 +59,7 @@
 
                 <div class="controlfrm">
                     <form name="frmAlert">
-                        <input type="txt" placeholder="Insira aqui o nome da cidade" name="txtAlert" id="mostraralert"/>
+                        <input type="txt" placeholder="Insira aqui o nome da cidade" name="txtAlert" id="city" required/>
                         <button onclick="displayon()" type="button"><i class="material-icons">search</i></button>
                     </form>
                 </div>
